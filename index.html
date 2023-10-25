@@ -147,7 +147,32 @@
             </svg>
             <div class="container">
                 <div class="contact-us-container">
+                    <h1>Contact Us</h1>
+                    <div id="form-container">
+                        <div id="contact-details-container">
+                            <lottie-player class="lotti-animation" autoplay loop mode="normal"
+                                src="./assests/lottie-files/call-us.json">
+                            </lottie-player>
 
+                            <!-- contact form -->
+                            <form class="contact-form">
+                                <div>
+                                    <label for="subject">Subject</label>
+                                    <input id="subject" placeholder="Email subject" type="text" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input id="email" placeholder="example@gmail.com" type="email" required>
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" placeholder="Your message" required></textarea>
+                                </div>
+                                <input type="submit" value="Send">
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,7 +184,29 @@
 
     <!-- footer starts -->
     <footer>
-        <h1>some footer content</h1>
+        <div class="container">
+            <div class="footer-container">
+                <div id="footer-logo-container">
+                    <div class="logo">
+                        <img class="logo-left" src="./assests/logo-left.png" alt="">
+                        <img class="logo-center" src="./assests/logo-center.png" alt="">
+                        <img class="logo-right" src="./assests/logo-right.png" alt="">
+                    </div>
+                    <h1>Q-Tech</h1>
+                </div>
+                <div id="footer-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- copyright text -->
+                <p>&copy; 2023 Q-Tech. All rights reserved. </p>
+            </div>
+        </div>
     </footer>
     <!-- footer ends -->
 
@@ -176,6 +223,8 @@
 
     <!-- split type CDN -->
     <script src="https://unpkg.com/split-type"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script src="./js/app.js"></script>
 </body>

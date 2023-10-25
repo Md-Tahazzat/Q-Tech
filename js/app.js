@@ -86,7 +86,7 @@ tl.from(
   {
     stagger: 0.02,
     y: "-50vh",
-    rotate: 130,
+    rotate: 60,
     duration: 0.1,
   },
   2.4
@@ -106,14 +106,14 @@ tl.from("#banner-title .text-3", {
 // animation for website logo.
 const logoTl = gsap.timeline({
   repeat: -1,
-  repeatDelay: 3,
+  repeatDelay: 4,
   yoyo: 1,
 });
 
-logoTl.from(
+logoTl.to(
   ".logo-container .logo .logo-left",
   {
-    delay: 2,
+    delay: 1,
     width: 10,
     height: 25,
     y: -11,
@@ -123,10 +123,10 @@ logoTl.from(
   },
   "a"
 );
-logoTl.from(
+logoTl.to(
   ".logo-container .logo .logo-right",
   {
-    delay: 2,
+    delay: 1,
     width: 10,
     height: 25,
     y: -11,
@@ -142,7 +142,7 @@ logoTl.from(
 gsap.from("#service-container", {
   duration: 1.4,
   scale: 0,
-  rotateX: 180,
+  // rotateX: 360,
   scrollTrigger: {
     trigger: "#service-container",
     scroller: "body",
